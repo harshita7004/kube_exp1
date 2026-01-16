@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/repo-name.git
+    repoURL: https://github.com/harshita7004/kube_exp1.git
     targetRevision: main
     path: k8s
   destination:
