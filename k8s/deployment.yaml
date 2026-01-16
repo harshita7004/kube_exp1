@@ -6,14 +6,18 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: image: harshita7004/myapp:latest
+
   template:
     metadata:
       labels:
-        app: myapp
+        app: image: harshita7004/myapp:latest
+
+
     spec:
       containers:
-      - name: myapp
+      - name: image: harshita7004/myapp:latest
+
         image: yourdockerhubusername/myapp:latest
         ports:
         - containerPort: 3000
