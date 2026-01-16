@@ -6,21 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: image: harshita7004/myapp:7cd4b01f1881ba5e80b94971024c7f8973440585
-
-
-
+      app: myapp
   template:
     metadata:
       labels:
-        app: image: harshita7004/myapp:7cd4b01f1881ba5e80b94971024c7f8973440585
-
-
+        app: myapp
     spec:
       containers:
-      - name: image: harshita7004/myapp:7cd4b01f1881ba5e80b94971024c7f8973440585
-
-
-        image: yourdockerhubusername/myapp:latest
+      - name: myapp
+        image: harshita7004/myapp:7cd4b01f1881ba5e80b94971024c7f8973440585
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
